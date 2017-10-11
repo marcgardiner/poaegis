@@ -29,15 +29,22 @@ class TestingConfig(Config):
     TESTING = True
 
 
-class StatingConfig(Config):
+class StagingConfig(Config):
     """Staging Environment"""
     DEBUG = True
 
 
-class ProductionConfiig(Config):
+class ProductionConfig(Config):
     """
         Production Environment, Hosted in AWS
     """
     DEBUG = False
     TESTINING = False
-    
+
+
+APP_CONFIG = {
+    'dev': DevConfig,
+    'testing': TestingConfig,
+    'staging': StagingConfig,
+    'production': ProductionConfig
+}
