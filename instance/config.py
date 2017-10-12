@@ -30,6 +30,7 @@ class TestingConfig(Config):
     """Testing Environment"""
     DEBUG = True
     TESTING = True
+    SQLALCHEMY_DATABASE_URI = 'postgresql://tester:test123@localhost/test_poaegis'
 
 
 class StagingConfig(Config):
