@@ -3,7 +3,8 @@
     "secret_key": "poegissystem",
 
     "db_url": "localhost",
-    "db_user": "postgres",
-    "db_password": "postgres",
-    "db_port": "5432"
+    "db_user": "dev",
+    "db_password": "dev123",
+    "db_port": "5432",
+    "db_name": "poaegis"
 }
